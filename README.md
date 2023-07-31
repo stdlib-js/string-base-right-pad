@@ -31,7 +31,7 @@ limitations under the License.
 ## Usage
 
 ```javascript
-import rpad from 'https://cdn.jsdelivr.net/gh/stdlib-js/string-base-right-pad@deno/mod.js';
+import rpad from 'https://cdn.jsdelivr.net/gh/stdlib-js/string-base-right-pad@v0.0.1-deno/mod.js';
 ```
 
 #### rpad( str, len, pad )
@@ -87,7 +87,7 @@ import papplyRight from 'https://cdn.jsdelivr.net/gh/stdlib-js/utils-papply-righ
 import naryFunction from 'https://cdn.jsdelivr.net/gh/stdlib-js/utils-nary-function@deno/mod.js';
 import map from 'https://cdn.jsdelivr.net/gh/stdlib-js/utils-map@deno/mod.js';
 import logEach from 'https://cdn.jsdelivr.net/gh/stdlib-js/console-log-each@deno/mod.js';
-import rpad from 'https://cdn.jsdelivr.net/gh/stdlib-js/string-base-right-pad@deno/mod.js';
+import rpad from 'https://cdn.jsdelivr.net/gh/stdlib-js/string-base-right-pad@v0.0.1-deno/mod.js';
 
 // Define a string to pad:
 var str = 'beep';

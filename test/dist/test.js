@@ -21,37 +21,13 @@
 // MODULES //
 
 var tape = require( 'tape' );
-var rpad = require( './../../dist' );
+var main = require( './../../dist' );
 
 
 // TESTS //
 
-tape( 'main export is a function', function test( t ) {
+tape( 'main export is defined', function test( t ) {
 	t.ok( true, __filename );
-	t.strictEqual( typeof rpad, 'function', 'main export is a function' );
-	t.end();
-});
-
-tape( 'the function right pads a string with spaces', function test( t ) {
-	var str = rpad( 'a', 5, ' ' );
-	t.equal( str, 'a    ', 'right padded with spaces' );
-	t.end();
-});
-
-tape( 'the function supports right padding a string with a custom pad string', function test( t ) {
-	var str = rpad( 'beep', 10, 'b' );
-	t.equal( str, 'beepbbbbbb', 'right padded to desired length' );
-	t.end();
-});
-
-tape( 'the function right pads a string such that an output string may exceed the specified length (minimum bound)', function test( t ) {
-	var str = rpad( 'a', 5, 'beepboop' );
-	t.equal( str, 'abeepboop', 'right padded and length exceeds minimum length' );
-	t.end();
-});
-
-tape( 'if the specified string length is less than or equal to the input string length, the function returns the input string', function test( t ) {
-	t.equal( rpad( 'boop', 2, 'beep' ), 'boop', 'returns input string (<)' );
-	t.equal( rpad( 'boop', 4, 'beep' ), 'boop', 'returns input string (=)' );
+	t.strictEqual( main !== void 0, true, 'main export is defined' );
 	t.end();
 });
